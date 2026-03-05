@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Kalam } from "next/font/google";
 import "./globals.css";
 
-// Menggunakan font bergaya tulisan tangan / spidol
 const kalam = Kalam({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="en">
       <body
         className={`${kalam.variable} font-handdrawn antialiased h-screen w-screen overflow-hidden bg-[#Fdfbf7] text-slate-900 selection:bg-pink-300`}
       >

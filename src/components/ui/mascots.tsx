@@ -1,6 +1,6 @@
 import React from "react";
 
-// AXEL (Si Besar)
+// AXEL (The Mechanic)
 export const Axel = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 800 800" className={className}>
     <g id="axel-mascot-sketch">
@@ -20,47 +20,6 @@ export const Axel = ({ className }: { className?: string }) => (
           stroke="#2DD4BF"
           strokeWidth="50"
           strokeLinecap="round"
-          filter="url(#roughen)"
-        />
-      </g>
-      <g id="screwdriver" transform="translate(0, 10)">
-        <rect
-          x="635"
-          y="320"
-          width="20"
-          height="120"
-          fill="#94A3B8"
-          stroke="#0F172A"
-          strokeWidth="5"
-          filter="url(#roughen)"
-        />
-        <rect
-          x="625"
-          y="420"
-          width="45"
-          height="110"
-          rx="15"
-          fill="#A78BFA"
-          stroke="#0F172A"
-          strokeWidth="6"
-          filter="url(#roughen) url(#softShadow)"
-        />
-        <path
-          d="M 635 300 L 655 320 M 655 300 L 635 320"
-          stroke="#0F172A"
-          strokeWidth="6"
-          strokeLinecap="round"
-          filter="url(#roughen)"
-        />
-      </g>
-      <g id="hand-right">
-        <circle
-          cx="640"
-          cy="510"
-          r="45"
-          fill="#2DD4BF"
-          stroke="#0F172A"
-          strokeWidth="6"
           filter="url(#roughen)"
         />
       </g>
@@ -219,7 +178,7 @@ export const Axel = ({ className }: { className?: string }) => (
   </svg>
 );
 
-// GIZMO (Si Sedang)
+// GIZMO (The Data Orb)
 export const Gizmo = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 800 800" className={className}>
     <g id="gizmo-mascot-sketch">
@@ -463,7 +422,7 @@ export const Gizmo = ({ className }: { className?: string }) => (
   </svg>
 );
 
-// ZIP (Si Kecil - VERSI LO!)
+// ZIP (The Connectivity Ghost)
 export const Zip = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 800 800" className={className}>
     <g id="zip-mascot-sketch">
@@ -570,6 +529,350 @@ export const Zip = ({ className }: { className?: string }) => (
           filter="url(#roughen)"
         />
       </g>
+    </g>
+  </svg>
+);
+
+// NOVA (The Visionary - Ideation & Manifestation)
+export const Nova = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 800 800" className={className}>
+    <g id="nova-mascot-sketch">
+      <ellipse
+        cx="400"
+        cy="740"
+        rx="100"
+        ry="15"
+        fill="#000"
+        opacity="0.08"
+        filter="url(#roughen)"
+      />
+
+      {/* Glowing Rays / Aura */}
+      <circle
+        id="nova-rays"
+        cx="400"
+        cy="400"
+        r="220"
+        fill="none"
+        stroke="#FBBF24"
+        strokeWidth="12"
+        strokeDasharray="30, 40"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+
+      {/* Main Star Body */}
+      <path
+        d="M 400 150 C 550 250, 600 400, 500 550 C 400 650, 300 650, 200 550 C 100 400, 250 250, 400 150 Z"
+        fill="#FDE047"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen) url(#softShadow)"
+      />
+
+      {/* Arms reaching up to the sky */}
+      <path
+        d="M 250 450 Q 150 350 180 250"
+        fill="none"
+        stroke="#FDE047"
+        strokeWidth="25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        filter="url(#roughen)"
+      />
+      <path
+        d="M 550 450 Q 650 350 620 250"
+        fill="none"
+        stroke="#FDE047"
+        strokeWidth="25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        filter="url(#roughen)"
+      />
+
+      {/* One giant visionary eye */}
+      <circle
+        cx="400"
+        cy="350"
+        r="60"
+        fill="#FFFFFF"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen)"
+      />
+      <circle
+        cx="400"
+        cy="330"
+        r="25"
+        fill="#3B82F6"
+        stroke="#0F172A"
+        strokeWidth="4"
+        filter="url(#roughen)"
+      />
+      <circle cx="400" cy="330" r="10" fill="#0F172A" />
+      <circle cx="390" cy="320" r="8" fill="#FFFFFF" />
+
+      {/* Happy floating smile */}
+      <path
+        d="M 360 460 Q 400 500 440 460"
+        fill="none"
+        stroke="#0F172A"
+        strokeWidth="6"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+      <circle
+        cx="340"
+        cy="430"
+        r="15"
+        fill="#F87171"
+        opacity="0.4"
+        filter="url(#roughen)"
+      />
+      <circle
+        cx="460"
+        cy="430"
+        r="15"
+        fill="#F87171"
+        opacity="0.4"
+        filter="url(#roughen)"
+      />
+    </g>
+  </svg>
+);
+
+// BITE (The Guard - Security & Discipline)
+export const Bite = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 800 800" className={className}>
+    <g id="bite-mascot-sketch">
+      <ellipse
+        cx="400"
+        cy="740"
+        rx="160"
+        ry="20"
+        fill="#000"
+        opacity="0.1"
+        filter="url(#roughen)"
+      />
+
+      {/* Sturdy Blocky Body */}
+      <rect
+        x="250"
+        y="250"
+        width="300"
+        height="380"
+        rx="40"
+        fill="#EF4444"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen) url(#softShadow)"
+      />
+
+      {/* Legs planted firmly */}
+      <rect
+        x="280"
+        y="630"
+        width="40"
+        height="80"
+        rx="10"
+        fill="#EF4444"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen)"
+      />
+      <rect
+        x="480"
+        y="630"
+        width="40"
+        height="80"
+        rx="10"
+        fill="#EF4444"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen)"
+      />
+
+      {/* Tough Eyes */}
+      <circle
+        cx="330"
+        cy="350"
+        r="30"
+        fill="#FFFFFF"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen)"
+      />
+      <circle
+        cx="470"
+        cy="350"
+        r="30"
+        fill="#FFFFFF"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen)"
+      />
+      <circle cx="340" cy="350" r="10" fill="#0F172A" />
+      <circle cx="460" cy="350" r="10" fill="#0F172A" />
+
+      {/* Angry/Focused Eyebrows */}
+      <path
+        d="M 280 320 L 360 340"
+        stroke="#0F172A"
+        strokeWidth="8"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+      <path
+        d="M 520 320 L 440 340"
+        stroke="#0F172A"
+        strokeWidth="8"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+
+      {/* Zig-Zag Teeth/Mouth */}
+      <path
+        d="M 320 450 L 350 480 L 400 440 L 450 480 L 480 450"
+        fill="none"
+        stroke="#0F172A"
+        strokeWidth="6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        filter="url(#roughen)"
+      />
+
+      {/* Crossed Arms (Defensive stance) */}
+      <path
+        d="M 220 500 Q 400 600 580 500"
+        fill="none"
+        stroke="#EF4444"
+        strokeWidth="45"
+        strokeLinecap="round"
+        filter="url(#roughen) url(#softShadow)"
+      />
+      <path
+        d="M 220 500 Q 400 600 580 500"
+        fill="none"
+        stroke="#0F172A"
+        strokeWidth="6"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+    </g>
+  </svg>
+);
+
+// ECHO (The Communicator - Social & Language)
+export const Echo = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 800 800" className={className}>
+    <g id="echo-mascot-sketch">
+      <ellipse
+        cx="400"
+        cy="740"
+        rx="90"
+        ry="15"
+        fill="#000"
+        opacity="0.1"
+        filter="url(#roughen)"
+      />
+
+      {/* Tall Noodle Body */}
+      <rect
+        x="320"
+        y="180"
+        width="160"
+        height="480"
+        rx="80"
+        fill="#818CF8"
+        stroke="#0F172A"
+        strokeWidth="6"
+        filter="url(#roughen) url(#softShadow)"
+      />
+
+      {/* Long bendy arms */}
+      <path
+        d="M 320 400 Q 200 450 250 550"
+        fill="none"
+        stroke="#818CF8"
+        strokeWidth="30"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+      <path
+        d="M 480 400 Q 600 450 550 550"
+        fill="none"
+        stroke="#818CF8"
+        strokeWidth="30"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+
+      {/* Big Headphones */}
+      <path
+        d="M 280 250 C 280 100, 520 100, 520 250"
+        fill="none"
+        stroke="#334155"
+        strokeWidth="15"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+      <g id="echo-headphones">
+        <rect
+          x="270"
+          y="200"
+          width="50"
+          height="100"
+          rx="20"
+          fill="#0F172A"
+          filter="url(#roughen)"
+        />
+        <rect
+          x="480"
+          y="200"
+          width="50"
+          height="100"
+          rx="20"
+          fill="#0F172A"
+          filter="url(#roughen)"
+        />
+      </g>
+
+      {/* Chill Eyes */}
+      <path
+        d="M 360 280 Q 380 270 400 280"
+        fill="none"
+        stroke="#0F172A"
+        strokeWidth="6"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+      <path
+        d="M 400 280 Q 420 270 440 280"
+        fill="none"
+        stroke="#0F172A"
+        strokeWidth="6"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+
+      {/* Speaking Mouth */}
+      <circle cx="400" cy="330" r="15" fill="#0F172A" filter="url(#roughen)" />
+      <path
+        d="M 440 310 Q 460 330 440 350"
+        fill="none"
+        stroke="#6366F1"
+        strokeWidth="4"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
+      <path
+        d="M 455 300 Q 485 330 455 360"
+        fill="none"
+        stroke="#6366F1"
+        strokeWidth="4"
+        strokeLinecap="round"
+        filter="url(#roughen)"
+      />
     </g>
   </svg>
 );
