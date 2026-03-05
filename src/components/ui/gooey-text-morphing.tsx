@@ -115,7 +115,7 @@ export function GooeyText({
           ref={text1Ref}
           className={cn(
             "absolute inline-block select-none text-center text-5xl md:text-7xl font-black tracking-tighter",
-            "text-white",
+            "text-slate-900",
             textClassName,
           )}
         />
@@ -123,7 +123,7 @@ export function GooeyText({
           ref={text2Ref}
           className={cn(
             "absolute inline-block select-none text-center text-5xl md:text-7xl font-black tracking-tighter",
-            "text-white",
+            "text-slate-900",
             textClassName,
           )}
         />
